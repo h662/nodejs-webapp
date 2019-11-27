@@ -1,0 +1,12 @@
+{
+  "name": "nodejs-webapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/h662/nodejs-webapp.git",
+  "author": "sh183694@gmail.com <sh183694@gamil.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^2.0.4"
+  }
+}

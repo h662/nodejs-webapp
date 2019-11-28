@@ -8,6 +8,15 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.set("views", "./views");
 app.set("view engine", "pug");
 
+app.get("/topic", (req, res) => {
+  fs.readdir("data", (err, files) => {
+    if (err) {
+      console.log(err);
+      res.status(500).send("Internal Server Error");
+    }
+    res.render("view", { topics: files });
+  });
+});
 app.get("/topic/new", (req, res) => {
   res.render("new");
 });
